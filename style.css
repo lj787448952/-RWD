@@ -1,0 +1,377 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+.container{
+    max-width: 940px;
+    margin: 0 auto;
+    font-family:微軟正黑體;
+  }
+  .header{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0px;
+  }
+  .logo{
+    width:220px;
+  }
+  .list{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .list a{
+    font-size: 20px;
+    margin-left: 60px;
+    font-weight: 900;
+    color: #3F5D45;
+    text-decoration: none;
+  }
+  .banner{
+    margin-bottom: 60px;
+  }
+  .content{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .item-left{
+    width: 32%;
+    border:1px #eaf0ed solid;
+  }
+  .item-left li{
+    color: #3F5D45;
+    font-size:23px;
+    line-height:40px;
+    font-weight: 600;
+    text-align: center;
+    border:1px #eaf0ed solid;
+  }
+  .item-left a{
+    padding: 16px 66px;
+    text-decoration: none;
+    color: #3F5D45;
+    display: block;
+  }
+  .deseert-category{
+    color: white;
+    background-color: #3F5D45;
+    font-size:24px;
+    line-height:40px;
+    font-weight: 900;
+    text-align: center;
+    padding: 16px 66px;
+    border:1px #eaf0ed solid;
+  }
+  .grey{
+    background-color:#EAF0ED;
+    border:1px #eaf0ed solid;
+  }
+  .item-right{
+    display: flex;
+    justify-content: space-between;
+    width: 620px;
+    flex-wrap: wrap;
+  }
+  .item-right-item{
+    border: 1px #eaf0ed solid;
+    position: relative;
+    margin-bottom: 20px;
+  }
+  .recommand{
+    position: absolute;
+    writing-mode: vertical-lr;
+    padding: 10px;
+    background-color: #3F5D45;
+    color: white;
+    left: 20px;
+    letter-spacing:4px;
+  }
+  .heart{
+    position: absolute;
+    right: 22px;
+    top: 19px;
+  }
+  .item-img img{
+    display: block;
+  }
+  .product-name{
+    display: flex;
+    text-align: center;
+  }
+  .product-name h4{
+    font-size: 20px;
+    padding: 14px 0px;
+    text-align: center;
+    width:50%;
+    color:#3F5D45;
+  }
+  .product-name span{
+    border-left: 1px #EAF0ED solid;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 300;
+    padding: 14px 19px 14px 24px;
+  }
+  .shopping-cart{
+    display: flex;
+    justify-content: center;
+    background-color: #EAF0ED;
+  }
+  .shopping-cart a{
+    font-size:20px;
+    padding: 20px;
+    background-color: #EAF0ED;
+    font-weight: 900;
+    color:#3F5D45;
+    width:100%;
+    text-align: center;
+    text-decoration: none;
+  }
+  .page ul{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 20px;
+    margin-bottom: 60px;
+  }
+  .page a{
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    color: #3f5d45;
+    border: 1px #eaf0ed solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+  }
+  .btn:hover{
+    background-color: #3F5D45;
+    color: white;
+  }
+  .item-left li:hover{
+    background-color: #EAF0ED;
+  }
+  .shopping-cart a:hover{
+    background-color: #3F5D45;
+    color: #EAF0ED;
+  }
+  
+  /* footer */
+  .footer-mail{
+    background-color: #3F5D45;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .footer-subscribe{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .footer-subscribe>img{
+    width: 40px;
+    height: 40px;
+    margin-right: 20px; 
+  }
+  .footer-subscribe h3{
+    color: white;
+    font-size: 24px;
+  }
+  .mail-form{
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .mail-form input{
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/mail-24px.png);
+    background-repeat: no-repeat;
+    border: none;
+    box-sizing: border-box;
+    padding: 20px 20px 20px 55px;
+    background-position: 20px center;
+    width: 350px;
+    background-color: #EAF0ED;
+  }
+  .icon-btn{
+    background-color: #FFE180;
+    border: none;
+    width: 56px;
+  }
+  .container-footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: #EAF0ED;
+  }
+  .warp-container-left{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    
+  }
+  .logo-address img{
+    width: 171px;
+    height: 27px;
+    margin-bottom: 115.5px;
+    margin-top: 39px;
+  }
+  .warp-container-left li{
+    color: #3F5D45;
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 400;
+  }
+  .logo-address-img img{
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+    margin-top: 30px;
+  }
+  .warp-container-right{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+  .warp-container-right p{
+    color: #3F5D45;
+    font-size: 16px;
+  }
+  .warp-container-right h1{
+    font-size: 24px;
+    font-weight: bold;
+    color: #3F5D45;
+    writing-mode: vertical-rl;
+    text-indent: -20px;
+    margin-top: 39px;
+    letter-spacing:0.5px;
+    line-height: 35px;
+  }
+  .hamhidden{
+    display: none;
+  }
+  /* RWD------------------------------------- */
+/*937px*/
+   @media (max-width: 937px){
+     .header{
+       padding: 10px;
+     }
+     .banner{
+       margin-bottom: 0px;
+       padding: 10px 10px 0px 10px;
+     }
+    .content{
+      display: flex;
+      flex-direction: column;
+    }
+    .item-left{
+        width: 100%;
+    }
+    .item-left li{
+      width: 100%;
+    }
+    .item-right{
+      width: 100%;
+    }
+    .page ul{
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+  }
+  @media (max-width: 906px){
+    .item-right li{
+      width: 33%;
+    }
+  }
+  @media (max-width: 768px){
+    .item-img img{
+      width: 100%;
+    }
+    .item-right li{
+      width: 49%;
+    }
+    .hidden{
+      display:none;
+    }
+    .hamhidden{
+      display: block;
+    }
+  }
+    @media (max-width: 578px){
+      .item-right{
+        margin-top:20px;
+        align-items: center;
+        justify-content: center;
+      }
+      .item-right li{
+        width: 90%;
+      }
+      .footer-mail{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .footer-subscribe{
+        margin-top: 20px;
+      }
+      .warp-container-right h1{
+        display: none;
+      }
+      .container-footer{
+        display: flex;
+        flex-direction: column;
+        padding: 0px 0px 10px 90px;
+      }
+      .hamhidden{
+        display: block;
+      }
+    }
