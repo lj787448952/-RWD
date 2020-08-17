@@ -29,7 +29,8 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
+  font-family:微軟正黑體;
 }
 ol, ul {
 	list-style: none;
@@ -53,8 +54,7 @@ img{
 .container{
     max-width: 940px;
     margin: 0 auto;
-    font-family:微軟正黑體;
-  }
+}
   .header{
     display: flex;
     justify-content: space-between;
@@ -81,15 +81,16 @@ img{
   .content{
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
   }
   .item-left{
     width: 32%;
+  }
+  .item-left ul{
     border:1px #eaf0ed solid;
   }
   .item-left li{
     color: #3F5D45;
-    font-size:23px;
+    font-size:22px;
     line-height:40px;
     font-weight: 600;
     text-align: center;
@@ -118,7 +119,7 @@ img{
   .item-right{
     display: flex;
     justify-content: space-between;
-    width: 620px;
+    width: 66%;
     flex-wrap: wrap;
   }
   .item-right-item{
@@ -182,16 +183,18 @@ img{
     font-size: 20px;
     margin-bottom: 60px;
   }
-  .page a{
-    width: 60px;
-    height: 60px;
+  .page li{
     text-align: center;
-    color: #3f5d45;
-    border: 1px #eaf0ed solid;
+    border: 0.5px #eaf0ed solid;
     display: flex;
     align-items: center;
     justify-content: center;
+   
+  }
+  .page a{
+    padding: 30px;
     text-decoration: none;
+    color: #3f5d45;
   }
   .btn:hover{
     background-color: #3F5D45;
@@ -208,7 +211,6 @@ img{
   /* footer */
   .footer-mail{
     background-color: #3F5D45;
-    max-width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
