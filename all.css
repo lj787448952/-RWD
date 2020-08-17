@@ -67,6 +67,14 @@ img {
   text-decoration: none;
 }
 
+@media (max-width: 768px) {
+  .header .navbar-collapse a {
+    position: absolute;
+    top: 70px;
+    right: 50px;
+  }
+}
+
 .header .navbar-collapse .list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -148,12 +156,21 @@ img {
   }
 }
 
-.header .logo .hamhidden {
+.header .logo .hamhidden a {
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logotype-sm-dark.svg);
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+  background-size: contain;
+  width: 200px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
   display: none;
 }
 
 @media (max-width: 768px) {
-  .header .logo .hamhidden {
+  .header .logo .hamhidden a {
     display: block;
   }
 }
