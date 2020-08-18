@@ -388,7 +388,7 @@ img {
   text-decoration: none;
 }
 
-.content .item-right .shopping-cart a :hover {
+.content .item-right .shopping-cart a:hover {
   background-color: #3f5D45;
   color: #EAF0ED;
 }
