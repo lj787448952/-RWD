@@ -514,7 +514,7 @@ img {
           box-sizing: border-box;
   padding: 20px 20px 20px 55px;
   background-position: 20px center;
-  width: 350px;
+  width: 100%;
   background-color: #EAF0ED;
 }
 
